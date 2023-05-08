@@ -46,6 +46,6 @@ public class D01_Register {
     public void userCheckThatSuccessfullyRegistered() {
         String expectedMessage = "Thank you!";
         String actualMessage = register.successMessageLoc().getText();
-        Assert.assertTrue(actualMessage.contains(expectedMessage));
+        Assert.assertEquals(actualMessage, expectedMessage);
     }
 }
